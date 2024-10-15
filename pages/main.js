@@ -74,6 +74,18 @@
 
         let s = document.getElementsByClassName("Albums-slider p-3").item(0)
 
-        s.sty
-        
+ 
+            
+            
+                
 
+
+            
+
+            
+
+            
+
+            
+
+        
