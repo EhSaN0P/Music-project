@@ -1,6 +1,7 @@
 
 function playlist(){
-    for(let i = 0 ; i < 10 ; i++){
+    let arrimg = ["image\\Avatar.jpg" , "image\\image 1_10.jpg" , "image\\image 3.jpg" , "image\\image 6.jpg" , "image\\image 7.jpg" , "image\\image 8.jpg"]
+    for(let i = 0 ; i < 6 ; i++){
         let main = document.querySelectorAll("body > .song-playlist").item(0)
         let section = document.createElement("div")
         
@@ -16,7 +17,7 @@ h4.innerText = "Juhda"
 p.innerText = "Lady Gaga"
 
 
-img.src = "image\\Avatar.jpg"
+img.src = arrimg[i]
 section.style.marginLeft = "250px"
 section.style.marginBottom = "-50px"
 
@@ -35,6 +36,8 @@ img.style.height = "60%"
 img.style.marginLeft = "15%"
 img.style.borderBottomLeftRadius = "15px"
 img.style.borderTopLeftRadius = "15px"
+
+
 
 info.style.background = "linear-gradient(to right,var(--leftBarBgColor1),var(--leftBarBgColor2))"
 info.style.width = "80%"
@@ -63,15 +66,15 @@ info.appendChild(h4)
 info.appendChild(p)
 console.log(main);
 
-
-
-}
 }
 
-
-function list(){
     let lists = document.querySelectorAll("body > .con-main > .lists").item(0)
+    let lists1 = document.querySelectorAll("body > .song-playlist > div > div > img").item(1)
     let songs = document.createElement("div")
+    let songsInfo = document.createElement("div")
+
+    
+
     songs.style.width = "150px"
     songs.style.height = "150px"
     songs.style.marginTop = "100px"
@@ -82,14 +85,27 @@ function list(){
         songs.style.width = "1000px"
         songs.style.height = "600px"
         songs.style.transition = "1s"
+        
     }
-    songs.onmouseout = function(){
+    songsInfo.appendChild(lists1)
+    songs.appendChild(songsInfo)
+    songs.onmousedown = function(){
         songs.style.width = "150px"
         songs.style.height = "150px"
         songs.style.transition = "1s"
     }
     lists.appendChild(songs)
+    
+    
+
+
+
 }
+
+
+
+
 playlist()
-list()
+
+
 
