@@ -3,13 +3,27 @@ p{
     margin: 20px;
     font-weight: bold;
 }
-.con-main > h1{
+.con-main > h2{
     margin: 20px;
 }
-.con-main{
-    position: relative;
+
+.song-playlist{
+    margin-top: -850px;
+}
+.song-playlist > div > div > div > button:hover{
+    color: white;
 }
 
+
+.con-main > a {
+    color: white;
+    height: 0;
+    opacity: 0.2;
+    font-size: 28px;
+    margin: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 
