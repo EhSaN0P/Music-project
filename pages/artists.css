@@ -1,0 +1,31 @@
+
+.artists{
+    width: 800px;
+    height: 100%;
+    gap: 30px;
+    gap: 30px;
+    margin-top: 700px;
+    flex-direction: column;
+}
+.artists > .person{
+    display: flex;  
+    flex-direction: column;
+    width: 300px;
+    height: 210px;
+    gap: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to right,var(--leftBarBgColor1),var(--leftBarBgColor2));
+}
+
+.artists > .person > img{
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.artists > .person > p{
+    font-size: 20px;
+    color: white;
+    opacity: 0.2;
+
+}
