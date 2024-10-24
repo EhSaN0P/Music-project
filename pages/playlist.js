@@ -1,7 +1,5 @@
-
-function playlist(){
     let arrimg = ["image\\Avatar.jpg" , "image\\image 1_10.jpg" , "image\\image 3.jpg" , "image\\image 6.jpg" , "image\\image 7.jpg" , "image\\image 8.jpg"]
-    for(let i = 0 ; i < 6 ; i++){
+    for(let i = 0 ; i < arrimg.length ; i++){
         let main = document.querySelectorAll("body > .song-playlist").item(0)
         let section = document.createElement("div")
         
@@ -23,8 +21,9 @@ btn.innerText = "Add to playlist"
 btn.style.padding = "5px"
 btn.style.position = "absolute"
 btn.style.marginLeft = "85%"
-btn.style.background = "linear-gradient(to right,var(--leftBarBgColor1),var(--leftBarBgColor2))"
+btn.style.background = "white"
 btn.style.border = "0"
+btn.style.color = "black"
 btn.style.borderRadius = "15px"
 
 
@@ -49,7 +48,7 @@ playlist.style.flexDirection = "row"
 playlist.style.color = "white"
 
 
-img.style.width = "15%"
+img.style.width = "10rem"
 img.style.height = "60%"
 img.style.marginLeft = "15%"
 img.style.borderBottomLeftRadius = "15px"
@@ -101,33 +100,9 @@ myplaylist.onclick = function(){
 
 
 
-let main1 = document.querySelectorAll("body > .song-playlist1").item(0)
-let section1 = document.createElement("div")
-let caption = document.createElement("p")
+    let main1 = document.querySelectorAll(".song-playlist1").item(0)
 
 
 
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-}
-
-
-
-
-playlist()
-
-
+    }
 

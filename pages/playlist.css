@@ -8,7 +8,10 @@ p{
 }
 
 .song-playlist{
-    margin-top: -850px;
+    border: 1px solid #000;
+    background-color: antiquewhite;
+    
+ 
 }
 .song-playlist > div > div > div > button:hover{
     color: white;
