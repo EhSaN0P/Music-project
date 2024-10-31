@@ -16,6 +16,7 @@
      
       <main class="con-main">
         <img class="bgimg" src="image/Music Player - Dark Mode.jpg" alt="sorry">
+        
         <div class="left-bar  col-lg-2 h-100 p-3 ">
             <div class=" h-100 ">
                 <article class="leftBar-article1 h-50 overflow-hidden">
@@ -45,20 +46,67 @@
             </div>
             
         </div>
- 
-    <a href="#" id="musiclist">Music list</a>
-    <a href="#" id="myplaylist">My Playlist</a>    
- 
-    <div class="song-playlist1 container">
+
+        <div class="playlist-bar  col-lg-10 gap-1 h-100 p-1 ">
         
-    </div>
+            <div class="musics  col-5 text-center" id="musics">
+               <!-- musics -->
+                <!-- <section class="musicSec p-1 rounded m-3 ">
+                    <div class="musicSec-image-con col-3  "><img  src="image/image 12.jpg" alt=""></div>
+                    <div class="col-5 "><h4>Song Name</h4><h5>artist</h5></div>
+                    <div class="col-3  audio-controls"><audio class="music" src="audio/@Faravahr_Sound - 666 MYSTERY   Member.mp3"></audio> <button class="music-play">Play</button></div>
+                    <div class="col-1 "><i>+</i></div>
+                    
+                </section> -->
+
+
+
+            </div>
+
+            <div class="playlists col-7">
+
+                <div class=" d-flex gap-2 p-2" id="musicsPlace">
+
+                    <article id="creatPlaylist" onclick="showPlaylist()"><i class="fa fa-plus-square-o" style="font-size:6rem"></i></article>
+
+                </div>
+                
+
+
+            </div>
+
+        </div>
+
+        <!-- creating playlist menu -->
+
+        <article id="playlistMenu" class="p-2 col-1  gap-5">
+            <h2   style="text-transform: capitalize;color: aquamarine;text-align: center;">Create youre own playlist</h2>
+            <br>
+            <section class="  offset-2 d-flex gap-5 align-items-center"><label  for="" style="color: aquamarine;">Your PlayList Name:</label><input class="form-control w-50" type="text" name="inpPlaylistName" id="playlistName"> </section>
+
+            <br>
+
+            <h4   style="text-transform: capitalize;color: rgba(77, 175, 142, 0.637);text-align: center;">Your playlist Image </h4>
+            <img class="img-fluid offset-2" src="#" alt="" style="width: 35rem;height: 30rem;">
+            <br>
+            <br>
+            <br>
+            <button class=" w-50  offset-3 btn btn-primary " onclick="creatingPlaylist()" type="button">CREATE PLAYLIST</button>
+
+            <br>
+
+            <div class="x"><p onclick="hideCreatePlaylist()" >x</p></div>
+
+        </article>
+ 
+        <!--  playlist menu -->
+        <!-- in js -->
+         
+         
+   
+      
 
     </main>
-
-    <div class="song-playlist">
-        
-    </div>
-   
 
 
 
@@ -68,3 +116,6 @@
     <script src="playlist.js"></script>
 </body>
 </html>
+
+
+
